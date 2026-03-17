@@ -4,15 +4,14 @@ import { FaStar } from "react-icons/fa6";
 import { Link } from 'react-router';
 
 const AppsCard = ({ app }) => {
-  console.log(app)
-  const {image, title, downloads, ratingAvg} = app;
+  const {id, image, title, downloads, ratingAvg} = app;
   const viewFormatter = new Intl.NumberFormat('en-US', {
     notation: 'compact',
     compactDisplay: 'short'
   });
 
   return (
-    <Link className="card flex flex-col h-full bg-white shadow-lg p-4 hover:-translate-y-2 transition-all duration-200">
+    <Link to={`/apps/${id}`} className="card flex flex-col h-full bg-white shadow-lg p-4 hover:-translate-y-2 transition-all duration-200">
       <figure className="aspect-[4/4] w-full overflow-hidden">
         <img
           src={image}
