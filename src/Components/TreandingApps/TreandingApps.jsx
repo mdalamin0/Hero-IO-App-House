@@ -14,7 +14,7 @@ const TreandingApps = ({appsData}) => {
         {treandingApps.slice(0, 8).map(app => <AppsCard key={app.id} app = {app}/>)}
       </div>
      <div className='text-center mt-10 pb-20'>
-       <Link className='btn btn-wide bg-linear-120 from-[#9F62F2] to-[#632EE3] 
+       <Link to="/apps" className='btn btn-wide bg-linear-120 from-[#9F62F2] to-[#632EE3] 
       px-4 py-2 rounded text-sm md:text-[16px] font-semibold text-white cursor-pointer duration-300 hover:shadow-xl'>Show All</Link>
      </div>
     </div>

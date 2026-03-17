@@ -3,6 +3,7 @@ import Root from "../Pages/Root/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import axios from "axios";
+import Apps from "../Pages/Apps/Apps";
 
 export const router = createBrowserRouter([
   {
@@ -12,11 +13,19 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: async() => {
+        loader: async () => {
           const res = await axios.get("/appsData.json");
           return res.data;
         },
         Component: Home
+      },
+      {
+        path: 'apps',
+        loader: async () => {
+          const res = await axios.get("/appsData.json");
+          return res.data;
+        },
+        Component: Apps
       }
     ]
   }
