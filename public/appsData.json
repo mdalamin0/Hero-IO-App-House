@@ -1,0 +1,661 @@
+[
+  {
+    "id": 1,
+    "title": "Forest: Focus for Productivity",
+    "companyName": "Seekrtech",
+    "image": "https://play-lh.googleusercontent.com/NWRVVF6zXvmcqspJwdFOKcQG6OlsNwpMOxED_DgB6B2BBDeWwAeWZKZxGhgqU0LQVJU",
+    "description": "Stay focused and grow virtual trees.",
+    "size": 45,
+    "reviews": 120000,
+    "ratingAvg": 4.9,
+    "downloads": 7000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2000
+      },
+      {
+        "name": "2 star",
+        "count": 3000
+      },
+      {
+        "name": "3 star",
+        "count": 10000
+      },
+      {
+        "name": "4 star",
+        "count": 40000
+      },
+      {
+        "name": "5 star",
+        "count": 65000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "RinaSoft",
+    "image": "https://play-lh.googleusercontent.com/k0p0PlV3iitTUJaBk4P2NWiMHcAKrI7gB0ap7b9sIVCcKvE9RT6MTLf1Fr5oOUMQ1nFc",
+    "description": "Track study time with friends.",
+    "size": 38,
+    "reviews": 80000,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 3000
+      },
+      {
+        "name": "2 star",
+        "count": 4000
+      },
+      {
+        "name": "3 star",
+        "count": 8000
+      },
+      {
+        "name": "4 star",
+        "count": 25000
+      },
+      {
+        "name": "5 star",
+        "count": 40000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "CuteApps",
+    "image": "https://i.ibb.co.com/h17Ccmwv/download.png",
+    "description": "Pomodoro timer with cute cats.",
+    "size": 25,
+    "reviews": 50000,
+    "ratingAvg": 4.0,
+    "downloads": 5000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2000
+      },
+      {
+        "name": "2 star",
+        "count": 3000
+      },
+      {
+        "name": "3 star",
+        "count": 7000
+      },
+      {
+        "name": "4 star",
+        "count": 18000
+      },
+      {
+        "name": "5 star",
+        "count": 20000
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "TimeTech",
+    "image": "https://play-lh.googleusercontent.com/51TpGciMV4OD8i6UxfcYKZJHha6STDUm5GYOyKaZSgLCNb4WR7X0ZaGddhLAUywNTvoHY3_oV0KWxjWyu7qV=w240-h480-rw",
+    "description": "Organize daily schedules easily.",
+    "size": 40,
+    "reviews": 60000,
+    "ratingAvg": 4.3,
+    "downloads": 4000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2500
+      },
+      {
+        "name": "2 star",
+        "count": 3500
+      },
+      {
+        "name": "3 star",
+        "count": 9000
+      },
+      {
+        "name": "4 star",
+        "count": 22000
+      },
+      {
+        "name": "5 star",
+        "count": 23000
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Flip Clock: World Clock",
+    "companyName": "ClockStudio",
+    "image": "https://play-lh.googleusercontent.com/uW395LW-USYjVeusBDfpey_v_0tvD2HBIzHLt1j_CLA95TtvVJbnAmFqD-EOtfzp1zgv=w526-h296-rw",
+    "description": "Minimal digital clock widget.",
+    "size": 30,
+    "reviews": 70000,
+    "ratingAvg": 4.0,
+    "downloads": 9000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 4000
+      },
+      {
+        "name": "2 star",
+        "count": 5000
+      },
+      {
+        "name": "3 star",
+        "count": 10000
+      },
+      {
+        "name": "4 star",
+        "count": 25000
+      },
+      {
+        "name": "5 star",
+        "count": 26000
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habitify Inc.",
+    "image": "https://i.ibb.co.com/N2w1RgB3/download.png",
+    "description": "Build strong daily habits.",
+    "size": 28,
+    "reviews": 40000,
+    "ratingAvg": 4.2,
+    "downloads": 3000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 1500
+      },
+      {
+        "name": "2 star",
+        "count": 2500
+      },
+      {
+        "name": "3 star",
+        "count": 6000
+      },
+      {
+        "name": "4 star",
+        "count": 15000
+      },
+      {
+        "name": "5 star",
+        "count": 15000
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenApps",
+    "image": "https://i.ibb.co.com/XfqN3ZyD/download.jpg",
+    "description": "Grow plants while focusing.",
+    "size": 35,
+    "reviews": 45000,
+    "ratingAvg": 4.4,
+    "downloads": 7000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 1000
+      },
+      {
+        "name": "2 star",
+        "count": 2000
+      },
+      {
+        "name": "3 star",
+        "count": 5000
+      },
+      {
+        "name": "4 star",
+        "count": 15000
+      },
+      {
+        "name": "5 star",
+        "count": 22000
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Todoist: To-Do List & Tasks",
+    "companyName": "Doist",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn8P9m7AOPm9-STiaRUQXSG1VJ1cbYe_Gchw&s",
+    "description": "Simple task management app.",
+    "size": 42,
+    "reviews": 200000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 5000
+      },
+      {
+        "name": "2 star",
+        "count": 7000
+      },
+      {
+        "name": "3 star",
+        "count": 15000
+      },
+      {
+        "name": "4 star",
+        "count": 60000
+      },
+      {
+        "name": "5 star",
+        "count": 113000
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "TickTick: ToDo & Calendar",
+    "companyName": "TickTick Ltd.",
+    "image": "https://i.ibb.co.com/9HCXK01n/download.png",
+    "size": 39,
+    "reviews": 150000,
+    "ratingAvg": 4.6,
+    "downloads": 8000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 4000
+      },
+      {
+        "name": "2 star",
+        "count": 6000
+      },
+      {
+        "name": "3 star",
+        "count": 14000
+      },
+      {
+        "name": "4 star",
+        "count": 50000
+      },
+      {
+        "name": "5 star",
+        "count": 76000
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Microsoft To Do",
+    "companyName": "Microsoft",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3dUl96ZgO25ZSuHKVrNYNcoiLEXTWixA-A&s",
+    "description": "Daily planner and task manager.",
+    "size": 50,
+    "reviews": 180000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 3000
+      },
+      {
+        "name": "2 star",
+        "count": 5000
+      },
+      {
+        "name": "3 star",
+        "count": 12000
+      },
+      {
+        "name": "4 star",
+        "count": 60000
+      },
+      {
+        "name": "5 star",
+        "count": 100000
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Google Keep: Notes & Lists",
+    "companyName": "Google LLC",
+    "image": "https://play-lh.googleusercontent.com/9bJoeaPbGTB8Tz_h4N-p-6ReRd8vSS-frZb2tmJulaGIoTKElKj3zpmcFJvnS96ANZP5=w480-h960-rw",
+    "description": "Quickly capture thoughts and ideas.",
+    "size": 20,
+    "reviews": 250000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 8000
+      },
+      {
+        "name": "2 star",
+        "count": 10000
+      },
+      {
+        "name": "3 star",
+        "count": 20000
+      },
+      {
+        "name": "4 star",
+        "count": 90000
+      },
+      {
+        "name": "5 star",
+        "count": 122000
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Notion: Notes, Tasks, Wiki",
+    "companyName": "Notion Labs",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOJanZ5MR8YygpBl3Hp1uOm-ZO4pEfYOUSg&s",
+    "description": "All-in-one workspace for productivity.",
+    "size": 55,
+    "reviews": 180000,
+    "ratingAvg": 4.6,
+    "downloads": 8000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 5000
+      },
+      {
+        "name": "2 star",
+        "count": 7000
+      },
+      {
+        "name": "3 star",
+        "count": 15000
+      },
+      {
+        "name": "4 star",
+        "count": 60000
+      },
+      {
+        "name": "5 star",
+        "count": 93000
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Evernote - Notes Organizer",
+    "companyName": "Evernote Corp.",
+    "image": "https://play-lh.googleusercontent.com/dVQlfnQ_Fp-wNfKv2eI9XxbLymV6oGW_0ywIw3pxhYyKhjC0Lk8y6Ru_-sUc1fq2akADzAN7QWn8nPvcw6Ck",
+    "description": "Organize notes and tasks efficiently.",
+    "size": 60,
+    "reviews": 220000,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 9000
+      },
+      {
+        "name": "2 star",
+        "count": 12000
+      },
+      {
+        "name": "3 star",
+        "count": 25000
+      },
+      {
+        "name": "4 star",
+        "count": 80000
+      },
+      {
+        "name": "5 star",
+        "count": 94000
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Habitica: Gamify Your Tasks",
+    "companyName": "Habitica Inc.",
+    "image": "https://play-lh.googleusercontent.com/js9LcEDMPaWBLW-kX6zrCxVwKDKTsvQRgIubQnZB0wQs4NfNcxPkNlXQOpIDXKX0y5Y",
+    "description": "Turn your tasks into a fun game.",
+    "size": 48,
+    "reviews": 90000,
+    "ratingAvg": 4.3,
+    "downloads": 4000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 3000
+      },
+      {
+        "name": "2 star",
+        "count": 5000
+      },
+      {
+        "name": "3 star",
+        "count": 10000
+      },
+      {
+        "name": "4 star",
+        "count": 32000
+      },
+      {
+        "name": "5 star",
+        "count": 40000
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Loop Habit Tracker",
+    "companyName": "Alessandro Palumbo",
+    "image": "https://play-lh.googleusercontent.com/gGHaWnV9n3EK0jpJ_yessWA1PF6mcL7Ys41mBPTCTXtusf13Yr2zVpVYAOI69ZX2Gjc",
+    "description": "Build and maintain good habits.",
+    "size": 15,
+    "reviews": 70000,
+    "ratingAvg": 4.7,
+    "downloads": 3000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 1000
+      },
+      {
+        "name": "2 star",
+        "count": 2000
+      },
+      {
+        "name": "3 star",
+        "count": 5000
+      },
+      {
+        "name": "4 star",
+        "count": 20000
+      },
+      {
+        "name": "5 star",
+        "count": 42000
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Focus To-Do: Pomodoro Timer",
+    "companyName": "Pomodoro Inc.",
+    "image": "https://play-lh.googleusercontent.com/3kmG7GBEk_r5cq2ean-qBnty_e0lGaJMjZbWCRP4PCIi8XIVACdMLLK6wsC7JtbOgQ=w480-h960-rw",
+    "description": "Timer and task manager combined.",
+    "size": 33,
+    "reviews": 110000,
+    "ratingAvg": 4.6,
+    "downloads": 6000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2500
+      },
+      {
+        "name": "2 star",
+        "count": 3500
+      },
+      {
+        "name": "3 star",
+        "count": 9000
+      },
+      {
+        "name": "4 star",
+        "count": 40000
+      },
+      {
+        "name": "5 star",
+        "count": 55000
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Engross: Focus Timer & To-Do",
+    "companyName": "Engross Apps",
+    "image": "https://i.ibb.co.com/Vcd2P13d/download.jpg",
+    "description": "Beat procrastination and stay focused.",
+    "size": 27,
+    "reviews": 60000,
+    "ratingAvg": 4.5,
+    "downloads": 4000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2000
+      },
+      {
+        "name": "2 star",
+        "count": 3000
+      },
+      {
+        "name": "3 star",
+        "count": 7000
+      },
+      {
+        "name": "4 star",
+        "count": 22000
+      },
+      {
+        "name": "5 star",
+        "count": 26000
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "MyLifeOrganized: Task Planner",
+    "companyName": "MLO Software",
+    "image": "https://play-lh.googleusercontent.com/vgYAyjwKDQ2TgjEZzhfdoBqNBj5z5O6GSGpIqqVVD95EdaQpJPYV1pK5A20MUMeRNBs",
+    "description": "Advanced task management tool.",
+    "size": 50,
+    "reviews": 30000,
+    "ratingAvg": 4.2,
+    "downloads": 2000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 1500
+      },
+      {
+        "name": "2 star",
+        "count": 2500
+      },
+      {
+        "name": "3 star",
+        "count": 6000
+      },
+      {
+        "name": "4 star",
+        "count": 9000
+      },
+      {
+        "name": "5 star",
+        "count": 11000
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Any.do: To-do List & Calendar",
+    "companyName": "Any.do Inc.",
+    "image": "https://i.ibb.co.com/8nKvSvf6/download.jpg",
+    "description": "Manage tasks, lists and reminders.",
+    "size": 45,
+    "reviews": 170000,
+    "ratingAvg": 4.5,
+    "downloads": 8000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 5000
+      },
+      {
+        "name": "2 star",
+        "count": 7000
+      },
+      {
+        "name": "3 star",
+        "count": 15000
+      },
+      {
+        "name": "4 star",
+        "count": 60000
+      },
+      {
+        "name": "5 star",
+        "count": 83000
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "ZenDay: Time Management",
+    "companyName": "ZenDay Corp.",
+    "image": "https://play-lh.googleusercontent.com/MMIEYW0l1KY_jFC17J9YrlGDpWS0NEvGR8xi2TS7nJYjwjAAgIbf8vSrcQzC7dm_hH4=w240-h480-rw",
+    "description": "Visual timeline for your tasks.",
+    "size": 32,
+    "reviews": 40000,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2000
+      },
+      {
+        "name": "2 star",
+        "count": 3000
+      },
+      {
+        "name": "3 star",
+        "count": 8000
+      },
+      {
+        "name": "4 star",
+        "count": 13000
+      },
+      {
+        "name": "5 star",
+        "count": 14000
+      }
+    ]
+  }
+]

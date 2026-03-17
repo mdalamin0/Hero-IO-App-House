@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import './NavBar.css'
 import { FaGithub } from "react-icons/fa";
 import LogoImage from "../../assets/logo.png"
@@ -42,7 +42,7 @@ const NavBar = () => {
   </>
 
   return (
-    <>
+    <div className="shadow bg-white">
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -55,9 +55,9 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-sm md:text-xl font-bold flex items-center">
+          <Link to="/" className="text-sm md:text-xl font-bold flex items-center">
             <img src={LogoImage} alt="Logo" className="h-10 w-10" /> <span className="uppercase text-purple-600 ml-2">Hero.Io</span>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4">
@@ -72,7 +72,7 @@ const NavBar = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
