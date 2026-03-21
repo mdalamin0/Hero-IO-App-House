@@ -23,7 +23,7 @@ const AppDetails = () => {
         <div className='flex-2 '>
           <div className='border-b-2 border-purple-700 space-y-3 pb-4'>
             <h1 className='text-3xl font-bold'>{title}</h1>
-            <p className='text-gray-600'>Developed by <span className='font-semibold text-purple-600'>productive.io</span></p>
+            <p className='text-gray-600 dark:text-gray-400'>Developed by <span className='font-semibold text-purple-600'>productive.io</span></p>
           </div>
           <div className='mt-5'>
             <AppDetailsStat appData={appData}/>
@@ -37,7 +37,7 @@ const AppDetails = () => {
 
       <div className='mt-10'>
         <h2 className='text-3xl font-bold'>Description</h2>
-        <p className='text-gray-600 font-medium mt-5'>{description}</p>
+        <p className='text-gray-600 dark:text-gray-400 font-medium mt-5'>{description}</p>
       </div>
     </div>
   );
