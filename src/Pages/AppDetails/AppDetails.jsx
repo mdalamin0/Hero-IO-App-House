@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppDetailsStat from './AppDetailsStat';
+import RatingChart from '../../Components/RatingChart/RatingChart';
+import { addAppsToLocalStorage } from '../../Utilities/Utilities';
 
 const AppDetails = () => {
   const appData = useLoaderData();
-  const { image, title, size} = appData;
+  const { id, image, title, size, description} = appData;
+  const [install, setInstall] = useState(false);
+
+  const handleInstall = (id) => {
+    setInstall(true)
+    addAppsToLocalStorage( id )
+  }
+
   return (
     <div className='w-11/12 mx-auto pt-20 pb-10'>
       <div className='flex flex-col lg:flex-row gap-5 items-stretch border-b-2 border-gray-300 pb-10'>
@@ -19,10 +28,16 @@ const AppDetails = () => {
           <div className='mt-5'>
             <AppDetailsStat appData={appData}/>
           </div>
-          <div>
-            <button className='btn btn-xl skeleton bg-[#00D390] text-white shadow-xl hover:shadow-2xl btn-success '>Install Now ({size}MB)</button>
+          <div className='mt-5'>
+            <button onClick={() => handleInstall(id)} className={`btn btn-xl  bg-[#00D390] text-white shadow-xl hover:shadow-2xl btn-success  ${install ? "btn-disabled" : "skeleton"}`}>{install ? "Installed" : `Install Now (${size}MB)`} </button>
           </div>
         </div>
+      </div>
+      <RatingChart appData={appData}/>
+
+      <div className='mt-10'>
+        <h2 className='text-3xl font-bold'>Description</h2>
+        <p className='text-gray-600 font-medium mt-5'>{description}</p>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const NavBar = () => {
     </li>
     <li>
       <NavLink
-        to="/installation"
+        to="/installations"
         className={({ isActive }) =>
            `font-semibold text-[16px] hover:bg-transparent hover:text-purple-700 ${isActive ? "active" : ""
           }`

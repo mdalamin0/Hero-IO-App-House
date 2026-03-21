@@ -5,6 +5,7 @@ import Home from "../Pages/Home/Home";
 import axios from "axios";
 import Apps from "../Pages/Apps/Apps";
 import AppDetails from "../Pages/AppDetails/AppDetails";
+import Installations from "../Pages/Installations/Installations";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ export const router = createBrowserRouter([
           return appData;
         },
         Component: AppDetails
+      },
+      {
+        path: 'installations',
+        loader: async () => {
+          const res = await axios.get("/appsData.json");
+          return res.data;
+        },
+        Component: Installations
       }
     ]
   }
