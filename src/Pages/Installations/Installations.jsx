@@ -24,14 +24,14 @@ const Installations = () => {
       <div className='flex flex-col-reverse md:flex-row gap-5 items-center justify-between mt-10'>
         <h3 className='text-2xl font-semibold'>({installedApps.length}) Apps Found</h3>
         <div>
-          <select className="select">
-            <option disabled>Sort By Size</option>
+          <select defaultValue="Sort By Size" className="select">
+            <option disabled={true}>Sort By Size</option>
             <option>High-Low</option>
             <option>Low-Hight</option>
           </select>
         </div>
       </div>
-      <div className='py-5'>
+      <div className='pt-5 pb-20'>
         {installedApps.map(app => <InstalledAppsCard key={app.id} app={app}/>)}
       </div>
     </div>
