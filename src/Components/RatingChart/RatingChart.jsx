@@ -28,7 +28,7 @@ const RatingChart = ({ appData }) => {
             type="category"
             dataKey="name"
           />
-          <Tooltip  />
+          <Tooltip labelStyle={{ color:"black"}} />
           <Legend />
           <Bar
             dataKey="count"

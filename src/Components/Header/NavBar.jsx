@@ -32,7 +32,7 @@ const NavBar = () => {
       <NavLink
         to="/installations"
         className={({ isActive }) =>
-           `font-semibold text-[16px] hover:bg-transparent hover:text-purple-700 ${isActive ? "active" : ""
+          `font-semibold text-[16px] hover:bg-transparent hover:text-purple-700 ${isActive ? "active" : ""
           }`
         }
       >
@@ -65,8 +65,8 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a href="https://github.com/mdalamin0" target="_blank" className='btn  bg-linear-120 from-[#9F62F2] to-[#632EE3] 
-      px-4 py-2 rounded text-sm md:text-[16px] font-semibold text-white cursor-pointer 
+          <a href="https://github.com/mdalamin0" target="_blank" className='btn  btn-sm md:btn-md lg:btn-lg bg-linear-120 from-[#9F62F2] to-[#632EE3] 
+       rounded text-sm md:text-[16px] font-semibold text-white cursor-pointer 
        transition-opacity duration-300 hover:opacity-80 dark:border-0'>
             <FaGithub size={22} /> Contribute
           </a>

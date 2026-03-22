@@ -11,25 +11,28 @@ const AppDetailsStat = ({ appData }) => {
   })
 
   return (
-    <div className="stats">
-      <div className="stat">
-        <div className="stat-title"><LuDownload className='h-10 w-10 text-purple-700' /></div>
-        <div className='text-gray-600 dark:text-gray-400'>Downloads</div>
-        <div className="stat-value text-primary">
-          {formatter.format(downloads)}
+    <div className='flex justify-between items-center'>
+
+      <div className="stats">
+        <div className="stat">
+          <div><LuDownload className='h-10 w-10 text-purple-700' /></div>
+          <div className="stat-title text-lg">Downloads</div>
+          <div className="stat-value text-primary">
+            {formatter.format(downloads)}
+          </div>
         </div>
-      </div>
 
-      <div className="stat">
-        <div className="stat-title"><FaStar className='h-10 w-10 text-[#FF8811]' /></div>
-        <div className='text-gray-600 dark:text-gray-400'>Average Ratings</div>
-        <div className="stat-value text-primary">{ratingAvg}</div>
-      </div>
+        <div className="stat">
+          <div><FaStar className='h-10 w-10 text-[#FF8811]' /></div>
+          <div className="stat-title text-lg">Average Ratings</div>
+          <div className="stat-value text-primary">{ratingAvg}</div>
+        </div>
 
-      <div className="stat">
-        <div className="stat-title"><MdReviews className='h-10 w-10 text-purple-700' /></div>
-        <div className='text-gray-600 dark:text-gray-400'>Total Reviews</div>
-        <div className="stat-value text-primary">{formatter.format(reviews)}</div>
+        <div className="stat">
+          <div><MdReviews className='h-10 w-10 text-purple-700' /></div>
+          <div className="stat-title text-lg">New Registers</div>
+          <div className="stat-value text-primary">{formatter.format(reviews)}</div>
+        </div>
       </div>
     </div>
   );

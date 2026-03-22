@@ -20,7 +20,7 @@ const AppsCard = ({ app }) => {
       </figure>
       <div className="flex flex-col flex-grow">
         <div className=''>
-          <h2 className="card-title my-4">{title}</h2>
+          <h2 className="card-title my-4 dark:text-black">{title}</h2>
         </div>
         <div className="card-actions justify-between mt-auto">
           <p className="bg-base-300 py-1.5 px-2 flex items-center rounded text-[#00D390] font-medium "><LuDownload size={18} className='mr-2'/> {downloadFormatter.format(downloads)} </p>

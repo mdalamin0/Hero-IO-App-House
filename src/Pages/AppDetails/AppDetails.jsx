@@ -29,7 +29,7 @@ const AppDetails = () => {
             <AppDetailsStat appData={appData}/>
           </div>
           <div className='mt-5'>
-            <button onClick={() => handleInstall(id)} className={`btn btn-xl  bg-[#00D390] text-white shadow-xl hover:shadow-2xl btn-success  ${install ? "btn-disabled" : "skeleton"}`}>{install ? "Installed" : `Install Now (${size}MB)`} </button>
+            <button onClick={() => handleInstall(id)} className={`btn md:btn-xl  bg-[#00D390] text-white shadow-xl hover:shadow-2xl btn-success  ${install ? "btn-disabled" : "skeleton"}`}>{install ? "Installed" : `Install Now (${size}MB)`} </button>
           </div>
         </div>
       </div>
