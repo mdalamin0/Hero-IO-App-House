@@ -4,6 +4,7 @@ import AppDetailsStat from './AppDetailsStat';
 import RatingChart from '../../Components/RatingChart/RatingChart';
 import { addAppsToLocalStorage } from '../../Utilities/Utilities';
 
+
 const AppDetails = () => {
   const appData = useLoaderData();
   const { id, image, title, size, description} = appData;
@@ -11,7 +12,7 @@ const AppDetails = () => {
 
   const handleInstall = (id) => {
     setInstall(true)
-    addAppsToLocalStorage( id )
+    addAppsToLocalStorage( id );
   }
 
   return (

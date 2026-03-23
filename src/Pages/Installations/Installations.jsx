@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import AppsPageHeading from '../../Shared/AppsPageHeading/AppsPageHeading';
 import { FaAngleDown } from 'react-icons/fa';
 import { useLoaderData } from 'react-router';
-import { getStoredApps } from '../../Utilities/Utilities';
+import { getStoredApps, removeApps } from '../../Utilities/Utilities';
 import InstalledAppsCard from '../../Components/InstalledAppsCard/InstalledAppsCard';
+import { toast } from 'react-toastify';
+import NoDataFound from '../../Shared/NoDataFound/NoDataFound';
 
 const Installations = () => {
   const appsData = useLoaderData();
@@ -13,10 +15,28 @@ const Installations = () => {
     // get installed apps data from local storage
     const storedAppsIds = getStoredApps();
     const installedAppsData = appsData.filter(app => storedAppsIds.includes(app.id));
-    setInstalledApps(installedAppsData);
+    const sortBySizeApps = [...installedAppsData].sort((a, b) => b.size - a.size)
+    setInstalledApps(sortBySizeApps);
   }, [appsData])
 
-  console.log(installedApps)
+  const handleUnInstallApps = (id) => {
+    const remainingApps = installedApps.filter(app => app.id !== id)
+    console.log(remainingApps)
+    setInstalledApps(remainingApps);
+    removeApps(id);
+    toast("Un-istalled from your device!")
+  }
+
+  const handleSort = (type) => {
+    if(type === 'high-low'){
+      const sortByDescendingDownloads = [...installedApps].sort((a, b) => b.downloads - a.downloads);
+      setInstalledApps(sortByDescendingDownloads);
+    }
+    if(type === 'low-high'){
+      const sortbyAscendingDownloads = [...installedApps].sort((a, b) => a.downloads - b.downloads);
+      setInstalledApps(sortbyAscendingDownloads)
+    }
+  }
 
   return (
     <div className='w-11/12 mx-auto'>
@@ -26,13 +46,22 @@ const Installations = () => {
         <div>
           <select defaultValue="Sort By Size" className="select">
             <option disabled={true}>Sort By Size</option>
-            <option>High-Low</option>
-            <option>Low-Hight</option>
+            <option onClick={() => handleSort('high-low')}>High-Low</option>
+            <option onClick={() => handleSort('low-high')}>Low-Hight</option>
           </select>
         </div>
       </div>
       <div className='pt-5 pb-20'>
-        {installedApps.map(app => <InstalledAppsCard key={app.id} app={app}/>)}
+        {installedApps.length === 0 ? <NoDataFound emplyStatetitle={"No apps installed yet!"} description={'Start exploring and install your favorite apps!'} /> :
+          <>
+            {installedApps.map(app => <InstalledAppsCard
+              key={app.id}
+              app={app}
+              handleUnInstallApps={handleUnInstallApps}
+            />)}
+          </>
+        }
+
       </div>
     </div>
   );

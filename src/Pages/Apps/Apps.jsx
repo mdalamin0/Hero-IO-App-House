@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppsPageHeading from '../../Shared/AppsPageHeading/AppsPageHeading';
 import { useLoaderData } from 'react-router';
 import AppsCard from '../../Shared/AppsCard/AppsCard';
+import NoDataFound from '../../Shared/NoDataFound/NoDataFound';
 
 const Apps = () => {
   const allApps = useLoaderData();
-  console.log(allApps)
+  const [searchText, setSearchText] = useState('');
+
+  const searchesApps = allApps.filter(app => app.title.toLowerCase().includes(searchText.toLowerCase()) || app.companyName.toLowerCase().includes(searchText.toLowerCase()))
   return (
     <div className='w-11/12 mx-auto'>
       <AppsPageHeading title={"Our All Applications"} des={"Explore All Apps on the Market developed by us. We code for Millions"} />
@@ -25,12 +28,21 @@ const Apps = () => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" required placeholder="Search Apps" />
+            <input
+              value={searchText}
+              type="search"
+              required placeholder="Search Apps"
+              onChange={(e) => setSearchText(e.target.value)}
+            />
           </label>
         </div>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10'>
-        {allApps.map(app => <AppsCard key={app.id} app={app}/>)}
+      <div >
+        {
+          searchesApps.length > 0 ? <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10'>
+            {searchesApps.map(app => <AppsCard key={app.id} app={app} />)}
+          </div> : (<NoDataFound emplyStatetitle={"No Apps Found!"} description={"We couldn't find any apps matching your search. Try using different or shorter keywords."} showBtn={false}/>)
+        }
       </div>
     </div>
   );

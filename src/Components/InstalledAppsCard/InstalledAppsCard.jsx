@@ -2,8 +2,8 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { LuDownload } from 'react-icons/lu';
 
-const InstalledAppsCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg, size } = app;
+const InstalledAppsCard = ({ app, handleUnInstallApps }) => {
+  const { id, image, title, downloads, ratingAvg, size } = app;
   const downloadFormatter = new Intl.NumberFormat('en-US', {
     notation: 'compact',
     compactDisplay: 'short'
@@ -24,7 +24,7 @@ const InstalledAppsCard = ({ app }) => {
         </div>
       </div>
       <div className='text-right'>
-        <button className='btn btn-sm  md:btn-md bg-[#00D390] text-white hover:bg-[#1bb685] duration-300 dark:border-0'>UnInstall</button>
+        <button onClick={() => handleUnInstallApps(id)} className='btn btn-sm  md:btn-md bg-[#00D390] text-white hover:bg-[#1bb685] duration-300 dark:border-0'>UnInstall</button>
       </div>
     </div>
   );
