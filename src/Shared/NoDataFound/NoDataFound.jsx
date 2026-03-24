@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const NoDataFound = ({emplyStatetitle, description, showBtn = true}) => {
   return (
-    <div className='text-center space-y-5'>
+    <div className='text-center space-y-5 py-20'>
       <RiErrorWarningLine className='w-full text-9xl text-[#FB2C36]' />
       <h2 className='text-2xl md:text-4xl font-bold'>{emplyStatetitle}</h2>
       {description && <p className='text-gray-600 dark:text-gray-400'>{description}</p>}

@@ -4,7 +4,6 @@ const getStoredAppsFromLocalStorage = () => {
   const storedAppsString = localStorage.getItem("apps");
   if (storedAppsString) {
     const storedApps = JSON.parse(storedAppsString);
-    console.log(storedApps)
     return storedApps;
   }
   return [];

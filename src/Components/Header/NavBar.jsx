@@ -36,7 +36,7 @@ const NavBar = () => {
           }`
         }
       >
-        Installation
+        My Installation
       </NavLink>
     </li>
   </>

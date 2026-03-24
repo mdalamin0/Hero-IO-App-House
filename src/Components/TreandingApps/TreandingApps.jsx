@@ -5,7 +5,6 @@ import { Link } from 'react-router';
 
 const TreandingApps = ({appsData}) => {
   const treandingApps = appsData.filter(app => app.ratingAvg > 4.4);
-  console.log(treandingApps.slice(0, 8))
   
   return (
     <div className='w-11/12 mx-auto'>

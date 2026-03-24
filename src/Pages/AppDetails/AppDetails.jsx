@@ -1,22 +1,37 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router';
 import AppDetailsStat from './AppDetailsStat';
 import RatingChart from '../../Components/RatingChart/RatingChart';
-import { addAppsToLocalStorage } from '../../Utilities/Utilities';
+import { addAppsToLocalStorage, getStoredApps } from '../../Utilities/Utilities';
+import NoDataFound from '../../Shared/NoDataFound/NoDataFound';
 
 
 const AppDetails = () => {
   const appData = useLoaderData();
-  const { id, image, title, size, description} = appData;
+  const appId = useParams();
+
+  console.log(appId)
+  const { id, image, title, size, description } = appData;
   const [install, setInstall] = useState(false);
+
+  useEffect(() => {
+    const installedApps = getStoredApps();
+    const isExistingApps = installedApps.find(appId => appId === id);
+    if (isExistingApps) {
+      setInstall(true)
+    }
+  }, [id])
 
   const handleInstall = (id) => {
     setInstall(true)
-    addAppsToLocalStorage( id );
+    addAppsToLocalStorage(id);
   }
 
+ 
+
   return (
-    <div className='w-11/12 mx-auto pt-20 pb-10'>
+    <>
+      <div className='w-11/12 mx-auto pt-20 pb-10'>
       <div className='flex flex-col lg:flex-row gap-5 items-stretch border-b-2 border-gray-300 pb-10'>
         <div className='flex-1 '>
           <img src={image} alt="app" className='w-[350px] h-[350px] rounded-xl shadow-2xl'/>
@@ -41,6 +56,7 @@ const AppDetails = () => {
         <p className='text-gray-600 dark:text-gray-400 font-medium mt-5'>{description}</p>
       </div>
     </div>
+    </>
   );
 };
 

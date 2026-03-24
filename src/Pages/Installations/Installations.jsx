@@ -24,7 +24,7 @@ const Installations = () => {
     console.log(remainingApps)
     setInstalledApps(remainingApps);
     removeApps(id);
-    toast("Un-istalled from your device!")
+    toast("Un-installed from your device!")
   }
 
   const handleSort = (type) => {
