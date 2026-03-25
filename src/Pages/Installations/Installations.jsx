@@ -55,7 +55,7 @@ const Installations = () => {
           </select>
         </div>
       </div>
-      <div className='pt-5 pb-20'>
+      <div className=' pb-20'>
         {installedApps.length === 0 ? <NoDataFound emplyStatetitle={"No apps installed yet!"} description={'Start exploring and install your favorite apps!'} /> :
           <>
             {installedApps.map(app => <InstalledAppsCard
