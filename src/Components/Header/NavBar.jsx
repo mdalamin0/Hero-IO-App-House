@@ -56,7 +56,7 @@ const NavBar = () => {
             </ul>
           </div>
           <Link to="/" className="text-sm md:text-xl font-bold flex items-center">
-            <img src={LogoImage} alt="Logo" className="h-10 w-10" /> <span className="uppercase text-purple-600 ml-2">Hero.Io</span>
+            <img src={LogoImage} alt="Logo" className="h-8 w-8 md:h-10 md:w-10" /> <span className="uppercase text-purple-600 ml-2">Hero.Io</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

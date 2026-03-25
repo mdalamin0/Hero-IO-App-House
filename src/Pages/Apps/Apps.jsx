@@ -4,6 +4,7 @@ import { useLoaderData, useNavigation } from 'react-router';
 import AppsCard from '../../Shared/AppsCard/AppsCard';
 import NoDataFound from '../../Shared/NoDataFound/NoDataFound';
 import Loader from '../../Shared/Loader/Loader';
+import { Helmet } from 'react-helmet-async';
 
 const Apps = () => {
   const allApps = useLoaderData();
@@ -13,6 +14,9 @@ const Apps = () => {
   const searchesApps = allApps.filter(app => app.title.toLowerCase().includes(searchText.toLowerCase()) || app.companyName.toLowerCase().includes(searchText.toLowerCase()))
   return (
     <div className='w-11/12 mx-auto'>
+      <Helmet>
+        <title>All Apps | Hero Apps House</title>
+      </Helmet>
       <AppsPageHeading title={"Our All Applications"} des={"Explore All Apps on the Market developed by us. We code for Millions"} />
       <div className='flex flex-col-reverse md:flex-row gap-5 items-center justify-between mt-10'>
         <h3 className='text-2xl font-semibold'>({searchesApps.length}) Apps Found</h3>

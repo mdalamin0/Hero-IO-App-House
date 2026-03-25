@@ -6,6 +6,7 @@ import { getStoredApps, removeApps } from '../../Utilities/Utilities';
 import InstalledAppsCard from '../../Components/InstalledAppsCard/InstalledAppsCard';
 import { toast } from 'react-toastify';
 import NoDataFound from '../../Shared/NoDataFound/NoDataFound';
+import { Helmet } from 'react-helmet-async';
 
 const Installations = () => {
   const appsData = useLoaderData();
@@ -28,11 +29,11 @@ const Installations = () => {
   }
 
   const handleSort = (type) => {
-    if(type === 'high-low'){
+    if (type === 'high-low') {
       const sortByDescendingDownloads = [...installedApps].sort((a, b) => b.downloads - a.downloads);
       setInstalledApps(sortByDescendingDownloads);
     }
-    if(type === 'low-high'){
+    if (type === 'low-high') {
       const sortbyAscendingDownloads = [...installedApps].sort((a, b) => a.downloads - b.downloads);
       setInstalledApps(sortbyAscendingDownloads)
     }
@@ -40,6 +41,9 @@ const Installations = () => {
 
   return (
     <div className='w-11/12 mx-auto'>
+      <Helmet>
+        <title>Installed Apps | Hero Apps House</title>
+      </Helmet>
       <AppsPageHeading title={"Your Installed Apps"} des={"Explore All Trending Apps on the Market developed by us"} />
       <div className='flex flex-col-reverse md:flex-row gap-5 items-center justify-between mt-10'>
         <h3 className='text-2xl font-semibold'>({installedApps.length}) Apps Found</h3>
