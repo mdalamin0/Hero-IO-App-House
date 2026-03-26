@@ -18,5 +18,5 @@ LocalStorage
 Axios
 Netlify (Deployment)
 
-Live Link: https://delicate-concha-b4af36.netlify.app/
+Live Link: https://hero-io-app-house.vercel.app/
 GitHub Link: https://github.com/mdalamin0/Hero-IO-App-House
