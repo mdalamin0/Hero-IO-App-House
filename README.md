@@ -1,62 +1,88 @@
 # 📱 Hero App House
 
-A modern and responsive web application that allows users to discover trending applications, explore detailed app information, and manage installations through a persistent LocalStorage-based system. The project demonstrates dynamic routing, client-side state management, and an interactive user experience built with React.js.
+Hero App House is a modern and responsive web application that allows users to discover trending applications, explore detailed app information, and manage installations through a persistent LocalStorage-based system. The project demonstrates dynamic routing, client-side state management, and an intuitive user experience built with React.js.
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Demo & Links
 
-🔗 **Live Website:**  
-https://your-live-link.vercel.app
-
-📂 **Repository:**  
-https://github.com/mdalamin0/Hero-IO-App-House
+- 🚀 **Live Website:** https://your-live-link.vercel.app
+- 📂 **GitHub Repository:** https://github.com/mdalamin0/Hero-IO-App-House
 
 ---
 
-# 🚀 Features
+# 🛠️ Main Technologies
 
-- 📱 Browse trending and all applications through a clean, card-based interface.
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- React Router DOM
+- Axios
+- LocalStorage
+
+---
+
+# ✨ Key Features
+
+- 📱 Browse trending and all applications through a clean and responsive interface.
 - 🔍 View detailed information for each application using dynamic routing.
 - ⬇️ Install applications with persistent LocalStorage support.
-- 🔄 Real-time installation status updates (Install → Installed).
-- 🗑️ Dedicated installation management page to view and uninstall apps.
-- ⚡ Smooth and responsive user experience across all devices.
+- 🔄 Real-time installation status updates.
+- 🗑️ Manage installed applications by viewing and uninstalling them.
+- 📱 Fully responsive design for desktop, tablet, and mobile devices.
 
 ---
 
-# 🛠️ Tech Stack
+# 📦 Dependencies
 
-### Frontend
-
-- JavaScript (ES6+)
-- React.js
-- Tailwind CSS
-
-### Data Management
-
-- LocalStorage
-- Axios
-
----
-
-# 💡 Challenges
-
-- Ensuring installed application data persisted across page reloads using LocalStorage.
-- Synchronizing application state so installation status updates instantly without refreshing the page.
-- Preventing duplicate installations while maintaining a smooth user experience.
-- Designing reusable components for better scalability and maintainability.
+```json
+{
+  "@tailwindcss/vite": "^4.2.1",
+    "axios": "^1.13.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet-async": "^3.0.0",
+    "react-icons": "^5.6.0",
+    "react-router": "^7.13.1",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.8.0",
+    "tailwindcss": "^4.2.1"
+}
+```
 
 ---
 
-# 🚀 Future Improvements
+# ⚙️ Getting Started
 
-- 🔐 Add user authentication for personalized app management.
-- ☁️ Replace LocalStorage with a backend database for persistent data storage.
-- 👨‍💼 Develop an admin dashboard to manage and publish applications.
-- 📄 Implement pagination and lazy loading for improved performance.
-- 🔎 Add search and category filtering.
-- ⭐ Introduce app ratings, reviews, and favorite functionality.
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/mdalamin0/Hero-IO-App-House.git
+```
+
+### 2️⃣ Navigate to the project directory
+
+```bash
+cd Hero-IO-App-House
+```
+
+### 3️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Start the development server
+
+```bash
+npm run dev
+```
+
+### 5️⃣ Open your browser
+
+```text
+http://localhost:5173
+```
 
 ---
 
